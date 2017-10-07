@@ -11,27 +11,27 @@ input_file = open("input.txt", "r")
 file = input_file.read()
 
 
-# Read from text file in same directory. This be O(n)
-def freq_dict():
+# More efficient way of doing frequency dict
+def freq_dict(file):
     freq = {}
     for char in file:
-        if char not in freq:
-            freq[char] = 0
-        freq[char] += 1
+        freq[char] = freq.get(char, 0) + 1
+    print(freq)
     return freq
-
-print(freq_dict())
 
 
 # Runs O(log n)
 def encode_huffman():
     huffman = Heap()
-    huffman.make_heap(freq_dict())
+    huffman.make_heap(freq_dict(file))
     huffman.merge_nodes()
     huffman.init_codes()
-    padded = huffman.pad_encoded_text(file)
-    print(padded)
-    b = huffman.byte_array(padded)
+    encoded = huffman.encode_text(file)
+    print(encoded)
+    b = huffman.byte_array(encoded)
+    #padded = huffman.pad_encoded_text(file)
+    #print(padded)
+    #b = huffman.byte_array(padded)
 
     with open("output.bin", "wb") as output:
         output.write(bytes(b))

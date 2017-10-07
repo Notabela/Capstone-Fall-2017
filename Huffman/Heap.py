@@ -57,6 +57,13 @@ class Heap:
         current = ""
         self.make_codes(root, current)
 
+    def encode_text(self, file):
+        encoded_text = ""
+        for char in file:
+            encoded_text += self.codes[char]
+        return encoded_text
+
+    """
     def pad_encoded_text(self, file):
         encoded_text = ""
         for char in file:
@@ -69,11 +76,12 @@ class Heap:
         padded_info = "{0:08b}".format(extra_padding)
         encoded_text = padded_info + encoded_text
         return encoded_text
+    """
 
     def byte_array(self, padded_encoded_text):
-        if len(padded_encoded_text) % 8 != 0:
-            print("Encoded text not padded properly")
-            exit(0)
+        #if len(padded_encoded_text) % 8 != 0:
+        #   print("Encoded text not padded properly")
+        #  exit(0)
         b = bytearray()
         for i in range(len(padded_encoded_text)):
             byte = padded_encoded_text[i:i+8]
