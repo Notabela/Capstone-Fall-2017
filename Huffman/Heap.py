@@ -49,8 +49,8 @@ class Heap:
             self.mapping[current] = root.char
             return
 
-        self.make_codes(root.right, current + "1")
-        self.make_codes(root.left, current + "0")
+        self.make_codes(root.right, current + "0")
+        self.make_codes(root.left, current + "1")
 
     def init_codes(self):
         root = heapq.heappop(self.heap)
