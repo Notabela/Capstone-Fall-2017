@@ -103,12 +103,15 @@ def bing_search(realword, scrambledword):
 
 
 def build_results(number_of_words):
+    progress = number_of_words
     while number_of_words > 0:
         real_word, scrambled_word = find_words(file, size)
         if scrambled_word is not None:
             google_search(real_word, scrambled_word)
             bing_search(real_word, scrambled_word)
             number_of_words -= 1
+
+        print(int(100*(1 - number_of_words/progress)), 'Percent Complete')
 
 
 def write_to_file(google_dict, bing_dict):
@@ -131,7 +134,7 @@ def write_to_file(google_dict, bing_dict):
                               str(value[2]).strip('[]')])
 
 
-build_results(100)
+build_results(10000)
 write_to_file(google_results, bing_results)
 
 
