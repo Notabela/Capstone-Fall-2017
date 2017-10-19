@@ -12,11 +12,11 @@ def scramble(string):
 
     # Obtain a random index in string, reverse the substring from index
     rand_index = randrange(len(string))
-    if rand_index + 3 > len(string)-1:
-        rand_index -= 3
+    if rand_index + 2 > len(string)-1:
+        rand_index -= 2
 
     # reverse the selected substring
-    string = string[:rand_index] + string[rand_index:rand_index + 3][::-1] + string[rand_index + 3:]
+    string = string[:rand_index] + string[rand_index:rand_index + 2][::-1] + string[rand_index + 2:]
 
     return string
 
@@ -27,19 +27,10 @@ def search_with(browser, word1, word2):
     search.send_keys(Keys.RETURN)  # hit return after you enter search text
     time.sleep(0.5)
     browser.find_element_by_name('q').send_keys(' [Real Word: {}]'.format(word2))
-    time.sleep(2)  # sleep for 2 seconds so you can see the results
+    time.sleep(1)  # sleep for 2 seconds so you can see the results
 
-browser1 = webdriver.Chrome()
-browser2 = webdriver.Chrome()
 
-browser1.get('http://www.google.com')
-browser2.get('http://www.bing.com')
-
-filename ="dictionary.txt"
-file = open(filename, 'r')
-file_size = os.stat(filename)[6]
-
-while True:
+def find_words(file, file_size):
     # Seek to a place in the file which is a random distance away
     # Mod by file size so that it wraps around to the beginning
     file.seek((file.tell() + randint(0, file_size - 1)) % file_size)
@@ -49,14 +40,31 @@ while True:
 
     # this will return the next (complete) line from the file
     word = file.readline().strip()
-    real_word = word
-    if len(word) < 10 or "'" in word:
-        continue
+    realword = word
+    scrambledword = ''
 
-    scrambled_word = scramble(word)
+    if len(word) > 5 and "'" not in word:
+        scrambledword = scramble(word)
 
-    search_with(browser1, scrambled_word, real_word)
-    search_with(browser2, scrambled_word, real_word)
+    return realword, scrambledword
 
-    browser1.find_element_by_name('q').clear()
-    browser2.find_element_by_name('q').clear()
+
+if __name__ == '__main__':
+    browser1 = webdriver.Chrome()
+    browser2 = webdriver.Chrome()
+
+    browser1.get('http://www.google.com')
+    browser2.get('http://www.bing.com')
+
+    filename = "dictionary.txt"
+    file = open(filename, 'r')
+    size = os.stat(filename)[6]
+
+    while True:
+        real_word, scrambled_word = find_words(file, size)
+        if len(scrambled_word) > 0:
+            search_with(browser1, scrambled_word, real_word)
+            search_with(browser2, scrambled_word, real_word)
+
+            browser1.find_element_by_name('q').clear()
+            browser2.find_element_by_name('q').clear()
