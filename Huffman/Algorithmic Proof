@@ -28,7 +28,7 @@ Step 2.  Our hypothesis is that for all A with |A| = n all frequencies f, our al
          
                Let tree Z be an optimal tree with siblings w and y. If Z' is a tree obtained from Z by 
                removing both w and y, we can then assume Z' to be a tree for alphabet A' with frequencies 
-               f'. Repeating our hypothetical calculations we arrive at Alph_len(Z) = ABL(Z') + f(w) + f(y). 
+               f'. Repeating our hypothetical calculations we arrive at Alph_len(Z) = Alph_len(Z') + f(w) + f(y). 
                Therefore it follows that Alph_len(T') = Alph_len(T) - f(w) - f(y) must be larger than 
                Alph_lenL(Z') = Alph_len(Z) - f(w) - f(y). And since T' is optimal for A' and f', we have a contraction! 
                This proves our original hypthesis that for all A with |A| = n and all frequencies f in 
