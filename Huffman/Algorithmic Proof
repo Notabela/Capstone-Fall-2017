@@ -13,7 +13,7 @@ Step 2.  Our hypothesis is that for all A with |A| = n all frequencies f, our al
          Huffington tree (Huff (A,f)).
          
          If we assume that our hypothesis will hold for n-1 symbols creating a T' that is optimal for A' and f' let's 
-         following the reasoning.
+         follow the reasoning.
          
          ABL(T) = (∑ f(x)depth(x,T)) + f(w)depth(w,T) + f(y)depth(y,T)  //for all x in A\{w,y}
                 = (∑ f(x)depth(x,T)) + (f(w) +f(y))(depth(z,T') + 1  //for all x in A\{w,y}
