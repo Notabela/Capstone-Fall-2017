@@ -15,12 +15,12 @@ Step 2.  Our hypothesis is that for all A with |A| = n all frequencies f, our al
          If we assume that our hypothesis will hold for n-1 symbols creating a T' that is optimal for A' and f' let's 
          follow the reasoning.
          
-         ABL(T) = (∑ f(x)depth(x,T)) + f(w)depth(w,T) + f(y)depth(y,T)  //for all x in A\{w,y}
+         Alph_len(T) = (∑ f(x)depth(x,T)) + f(w)depth(w,T) + f(y)depth(y,T)  //for all x in A\{w,y}
                 = (∑ f(x)depth(x,T)) + (f(w) +f(y))(depth(z,T') + 1  //for all x in A\{w,y}
                 = (∑ f(x)depth(x,T)) + f'(z)depth(z,T') + f(w) + f(y)  //for all x in A\{w,y}
                 = (∑ f'(x)depth(x,T')) + f(w) + f(y)  //for all x in A'
-                = ABL(T') + f(w) + f(y)       
-         ABL(T) = ABL(T') + f(w) + f(y)
+                = Alph_len(T') + f(w) + f(y)       
+         Alph_len(T) = ABL(T') + f(w) + f(y)
                
          
          Let's take a look at the contraction to our hypothesis that T is not optimal. If we can show that 
@@ -28,9 +28,9 @@ Step 2.  Our hypothesis is that for all A with |A| = n all frequencies f, our al
          
                Let tree Z be an optimal tree with siblings w and y. If Z' is a tree obtained from Z by 
                removing both w and y, we can then assume Z' to be a tree for alphabet A' with frequencies 
-               f'. Repeating our hypothetical calculations we arrive at ABL(Z) = ABL(Z') + f(w) + f(y). 
-               Therefore it follows that ABL(T') = ABL(T) - f(w) - f(y) must be larger than 
-               ABL(Z') = ABL(Z) - f(w) - f(y). And since T' is optimal for A' and f', we have a contraction! 
+               f'. Repeating our hypothetical calculations we arrive at Alph_len(Z) = ABL(Z') + f(w) + f(y). 
+               Therefore it follows that Alph_len(T') = Alph_len(T) - f(w) - f(y) must be larger than 
+               Alph_lenL(Z') = Alph_len(Z) - f(w) - f(y). And since T' is optimal for A' and f', we have a contraction! 
                This proves our original hypthesis that for all A with |A| = n and all frequencies f in 
                our algorithm Huff (A,f) we have an optimal tree.
                
