@@ -4,8 +4,8 @@ Step 1. Show it is true for the first one function (our base case)
 Step 2. Show that if any one function is true then the next function is true (our hypothesis of outcome)
 This proves that all functions must be true (verifying our hypothesis)
 
-The Huffman algorithm Huff(A,f) computes an optimal tree that reflects frequencies of f in an alphabet A.
-We prove the size of our alphabet (in simpliest terms) via induction. 
+The Huffman algorithm Huff(A,f) computes an optimal tree that reflects frequencies of f in an alphabet A with siblings 
+w and y. We prove the size of our alphabet (in simpliest terms) via induction. 
 
 Step 1.  Base case (n = 1) reflects a tree with one vertex (a root) with a cost of zero (the smallest possible tree). 
 
