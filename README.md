@@ -82,9 +82,15 @@ def get_percentage(second, third, fourth):
 ## Installation
 To get the same results we did, see instructions.txt in the Searcher folder to get the chrome drivers to work.
 Then run the command
-pip install -r requirements.txt
+
+**pip install -r requirements.txt**
+
 to install the api's required but our scripts.
-To run run.py run the command python run.py
-To run app.py run the command python app.py
-to run statistics.py run the command statistics.py
+
+- To run run.py run the command python run.py
+
+- To run app.py run the command python app.py
+
+- To run statistics.py run the command statistics.py
+
 All data is placed with in the Data folder with in the Seacher folder.
