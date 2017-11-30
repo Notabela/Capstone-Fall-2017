@@ -1,0 +1,7 @@
+*.iml
+*.xml
+*.pyc
+*.log
+*.jpg
+
+/ThinkDSP/book/*

@@ -1,0 +1,9 @@
+For Windows Machines
+Install Google Chrome
+Copy ./Requirements/Windows/chromedriver.exe to C:/Windows/System32
+Add the PATHs for chromedriver to your PATH Variable
+
+
+For Mac
+Install Google Chrome and Firefox
+Copy ./Requirements/Mac/chromedriver.exe to /usr/local/bin
