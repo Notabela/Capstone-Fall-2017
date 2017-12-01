@@ -1,5 +1,0 @@
-numpy
-wave
-matplotlib.pylot
-ffmpy
-pydsp
