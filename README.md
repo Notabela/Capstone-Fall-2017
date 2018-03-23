@@ -1,3 +1,9 @@
+## Team Members
+
+- [Daniel Obeng](https://github.com/notabela)
+- [Socratis Katehis](https://github.com/zoogati)
+- [Miguel Rodriguez](https://github.com/moomookittyclam148)
+
 ## References and Resources
 
 https://drive.google.com/open?id=13uXmD4sRa6-V3yXvP71MtuWEeBsLyqjF
