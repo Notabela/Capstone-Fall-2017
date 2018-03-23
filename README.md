@@ -25,9 +25,22 @@ person's voice and facial patterns when he/she lies
 
 - Our tasks are organized on trello. You can check and see our progress [here](https://trello.com/b/OrsvFPzi/deception-detection)
 
+## Repo Contents Description
+
+- **Huffman**: *Implementation of Huffman Algorithm and its Algorithmic Proof*
+
+- **Searcher**: *Comparision of Google vs. Bing using Selenium webdriver to automate searches to determine which one is better at autocorrecting a mispelled word and providing its definition*
+
+- **ThinkDSP**: *Forked Project: A tool for voice analysis*
+
+- **Voice Detection**: *Utility functions for detecting voice components such as vowel duration, pitch etc. `to be used in final web application`*
+
+- **Blink Detection**: *Analyzes video to determine when a blink occurs. `to be used in final web application`*
+
 
 ## Meeting Notes
 
+[Check out our team meetings](https://github.com/Notabela/Capstone-Fall-2017/blob/master/Meetings.md)
 
 ## Team Members
 
