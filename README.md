@@ -5,6 +5,8 @@
 We are building a lie detection system that combines audio and video data of a subject to detect instances of deception. The idea is based on proven psycological research that shows that when an individual lies, there are changes in 
 his/her voice (voice amplitude, energy, pitch, vowel duration etc.) and facial patterns (blink patterns, micro-expressions, gaze direction etc.) that can be tracked using software.
 
+[Check out our Web Application: `In Progress`](https://github.com/Notabela/Lie_to_me)
+
 In the Video below, Cliff Lansley, Director of Emotional Intelligence Academy explains exactly what changes occur in a 
 person's voice and facial patterns when he/she lies
 
