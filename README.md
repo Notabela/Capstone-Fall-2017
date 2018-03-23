@@ -15,21 +15,13 @@ person's voice and facial patterns when he/she lies
 
 ## References and Resources
 
-Our deliverable will be a web application, that is being managed in a separate repo. See below:
-
-https://github.com/Notabela/Lie_to_me
+- Our deliverable will be a web application, that is being managed in a separate repo [here](https://github.com/Notabela/Lie_to_me)
 
 
-
-All of our presentations and research material can be found at the link below:
-
-https://drive.google.com/open?id=13uXmD4sRa6-V3yXvP71MtuWEeBsLyqjF
+- All of our presentations and research material can be found [here](https://drive.google.com/open?id=13uXmD4sRa6-V3yXvP71MtuWEeBsLyqjF)
 
 
-
-Our tasks are organized on trello. You can check and see our progress here:
-
-https://trello.com/b/OrsvFPzi/deception-detection
+- Our tasks are organized on trello. You can check and see our progress [here](https://trello.com/b/OrsvFPzi/deception-detection)
 
 
 ## Meeting Notes
