@@ -20,12 +20,14 @@ Our deliverable will be a web application, that is being managed in a separate r
 https://github.com/Notabela/Lie_to_me
 
 
+
 All of our presentations and research material can be found at the link below:
 
 https://drive.google.com/open?id=13uXmD4sRa6-V3yXvP71MtuWEeBsLyqjF
 
 
-Where we will be organizing our tasks. You can check and see our progress here:
+
+Our tasks are organized on trello. You can check and see our progress here:
 
 https://trello.com/b/OrsvFPzi/deception-detection
 
