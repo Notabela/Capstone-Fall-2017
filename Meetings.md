@@ -30,8 +30,13 @@ Team Meeting: Monday, April 16 2018
 * Went through implementations to ensure data being collected can be used
 * Discussed Machine Learning algorithm to be used and how the data can be fit into the model
 
+Team Meeting: Wednesday, March 28 2018
+----------------------------------------
+* Discussed where each team member is at with assigned part
+* Review potential challenges and provided assistance to each other
 
-Team Meeting: Monday April 9, 2018
+
+Team Meeting: Monday March 12, 2018
 -------------------------------------
 * Discussed and created timeline of tasks that need to be completed
 
