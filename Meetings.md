@@ -1,3 +1,11 @@
+Team Meeting: Saturday, May 12 2018
+-------------------------------------
+* Project completed. We discussed the flaws in the project, where we went wrong, what needs to be improved
+    - Our machine learning algorithm needs major improvement. The algorithm we were able to come up with only considers the values at a specific time intervals rather than also considering the data points around the intervals. We believe that we'll obtain much better preditability if we obtain such an algorithm
+    - The system is rather slow in processing video because of all the data that has to be send from the backend to the frontend and back (Affectiva API for emotion and blink recognition). We're hoping to come up with an algorithm that will do all the analysis at the front-end or at the backend to improve efficiency
+    - Due to time constraints, the sample data that we generated wasn't the best. The behavior we're currently tracking are amplified and easily detected in high stake situations (e.g police investigation involving life/death/jail time etc.). The video we used was rather relaxed and as such the features we were tracking wasn't quite amplified
+    
+    
 Team Meeting: Monday, May 7 2018
 ------------------------------------
 * Discussed the next steps needed to complete the project
