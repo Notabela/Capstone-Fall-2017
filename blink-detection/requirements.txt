@@ -7,7 +7,7 @@ idna==2.6
 imutils==0.4.3
 Mastodon.py==1.1.1
 numpy==1.13.3
-opencv-python==3.3.0.10
+opencv-python==3.4.7.28
 python-dateutil==2.6.1
 pytz==2017.3
 requests==2.20.0
