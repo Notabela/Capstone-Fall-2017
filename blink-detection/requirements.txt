@@ -6,7 +6,7 @@ dlib==19.7.0
 idna==2.6
 imutils==0.4.3
 Mastodon.py==1.1.1
-numpy==1.13.3
+numpy==1.22.0
 opencv-python==3.3.0.10
 python-dateutil==2.6.1
 pytz==2017.3
